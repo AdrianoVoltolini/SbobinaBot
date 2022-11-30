@@ -143,7 +143,7 @@ def pronto(update: Update, context: CallbackContext) -> None:
             with open(f"{directory}{i}","rb") as testo:
                 context.bot.send_document(chat_id,testo)
             cnt = True
-            os.remove(f"/home/Lottimismo/main_folder/Transcripts/{i}")
+            os.remove(f"/home/user/main_folder/Transcripts/{i}")
 
     if cnt == False:
         update.message.reply_text("""
